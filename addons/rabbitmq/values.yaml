@@ -4,8 +4,8 @@
 
 image:
   registry: docker.io
-  repository: rabbitmq
-  pullPolicy: IfNotPresent
+  repository: beclab/library-rabbitmq
+  pullPolicy: 4.0.9-management
   # Overrides the image tag whose default is the chart appVersion.
   tag: 3.13.2-management
 

@@ -12,25 +12,25 @@ image:
   # bitnami/elasticsearch
   # docker pull bitnami/elasticsearch
   registry: docker.io
-  repository: elasticsearch
+  repository: beclab/library-elasticsearch
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "8.8.2"
   exporter:
-    repository: prometheuscommunity/elasticsearch-exporter
+    repository: beclab/prometheuscommunity-elasticsearch-exporter
     tag: "v1.7.0"
   # refer: addons/elasticsearch/plugins/Dockerfile
   plugin:
-    repository: apecloud/elasticsearch-plugins
+    repository: beclab/apecloud-elasticsearch-plugins
     tag: "8.8.2"
   tools:
-    repository: apecloud/curl-jq
+    repository: beclab/apecloud-curl-jq
     tag: 0.1.0
   kibana:
-    repository: apecloud/kibana
+    repository: beclab/apecloud-kibana
     tag: "8.8.2"
   agent:
-    repository: apecloud/elasticsearch-agent
+    repository: beclab/apecloud-elasticsearch-agent
     tag: "0.1.0"
 
 exporter:

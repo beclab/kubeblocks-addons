@@ -10,7 +10,7 @@ fullnameOverride: ""
 ##
 image:
   registry: docker.io
-  repository: minio/minio
+  repository: beclab/minio-minio
   tag: RELEASE.2024-06-29T01-20-47Z
   pullPolicy: IfNotPresent
 
@@ -24,7 +24,7 @@ defaultServiceVersion:
 mcImage:
   # if the value of mcImage.registry is not specified using `--set`, it will be set to the value of 'image.registry' by default
   registry: ""
-  repository: minio/mc
+  repository: beclab/minio-mc
   tag: RELEASE.2024-04-18T16-45-29Z
   pullPolicy: IfNotPresent
 
